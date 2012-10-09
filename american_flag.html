@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <style type="text/css">
+      body {
+
+      }
+      #flag{
+        width: 800px;
+        height: 420px;
+        background-color: #fff;
+        position: relative;
+      }
+      #blue_box{
+        background-color: blue;
+        width: 320px;
+        padding-top: 20px;
+        height: 225px;
+        position: absolute;
+      }
+      .star_row {
+        height: 22px;
+        margin-left: 25px;
+      }
+      .star_row ul {
+        margin: 0px;
+        padding: 0px;
+        width: 320px;
+        overflow: auto;
+      }
+      .star_row li{
+        color: #fff;
+        list-style: none;
+        float: left;
+        width: 12px;
+        margin-right: 40px;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .star_row.five_star ul {
+        margin-left: 26px;
+      }
+      .stripe{
+        height: 32.3px;
+        width: 800;
+      }
+      .stripe.red{
+        background-color: #f00;
+      }
+      .stripe.white{
+        background-color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="flag">
+      <div id="blue_box">
+        <div class="star_row">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+        <div class="star_row five_star">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+        <div class="star_row">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+        <div class="star_row five_star">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+        <div class="star_row">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+        <div class="star_row five_star">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+        <div class="star_row">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+        <div class="star_row five_star">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+        <div class="star_row">
+          <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stripe red"></div>
+      <div class="stripe white"></div>
+      <div class="stripe red"></div>
+      <div class="stripe white"></div>
+      <div class="stripe red"></div>
+      <div class="stripe white"></div>
+      <div class="stripe red"></div>
+      <div class="stripe white"></div>
+      <div class="stripe red"></div>
+      <div class="stripe white"></div>
+      <div class="stripe red"></div>
+      <div class="stripe white"></div>
+      <div class="stripe red"></div>
+    </div>
+        <script type="text/javascript">
+
+      var list_els = document.getElementsByTagName("li");
+
+      for (var i = 0; i < list_els.length; i++) {
+        list_els[i].addEventListener("click", function(e){
+          this.innerHTML= "&nbsp&nbsp";
+        });
+      }
+    </script>
+  </body>
+</html>
