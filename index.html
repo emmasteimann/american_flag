@@ -2,7 +2,7 @@
   <head>
     <style type="text/css">
       body {
-
+        font-family: sans-serif;
       }
       #flag{
         width: 800px;
@@ -33,7 +33,7 @@
         float: left;
         width: 12px;
         margin-right: 40px;
-        font-size: 22px;
+        font-size: 26px;
         cursor: pointer;
       }
       .star_row.five_star ul {
@@ -50,6 +50,17 @@
         background-color: #fff;
       }
     </style>
+    <script type="text/javascript">
+      window.onload = function(){
+        var list_els = document.getElementsByTagName("li");
+
+        for (var i = 0; i < list_els.length; i++) {
+          list_els[i].addEventListener("click", function(e){
+            this.innerHTML= "&nbsp&nbsp";
+          });
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -157,15 +168,8 @@
       <div class="stripe white"></div>
       <div class="stripe red"></div>
     </div>
-        <script type="text/javascript">
+    <br/>
+    <div id="message">Click to remove stars!</div>
 
-      var list_els = document.getElementsByTagName("li");
-
-      for (var i = 0; i < list_els.length; i++) {
-        list_els[i].addEventListener("click", function(e){
-          this.innerHTML= "&nbsp&nbsp";
-        });
-      }
-    </script>
   </body>
 </html>
